@@ -67,7 +67,7 @@ public class InternetInterfacer {
 		 * with.
 		 */
 		Node boot = doc.getDocumentElement();
-		NodeList blist = doc.getElementsByTagName("text");
+		NodeList blist = doc.getElementsByTagName("distance");
 		NodeList xlist = doc.getElementsByTagName("html_instructions");
 		for (int i = 0; i < blist.getLength(); i++) {
             Node j = blist.item(i);
@@ -83,8 +83,9 @@ public class InternetInterfacer {
                 String eeee = eee.replaceAll("[<](/)?div[^>][>]", "");
                 String rrrr = rrr.replaceAll("[<](/)?div[^>][>]", "");
 
-                System.out.println(eeee.replaceAll("</b>", ""));
+               
                 System.out.println(rrrr.replaceAll("</b>", ""));
+                System.out.println("Walk for" + eeee.replaceAll("</b>", ""));
 		}
 		}
 	}
